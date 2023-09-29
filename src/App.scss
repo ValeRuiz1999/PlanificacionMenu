@@ -1,0 +1,61 @@
+@import '_mixins';
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.header{
+  width: 100%;
+  padding: 1em;
+  background-color: orange;
+  color: white;
+  
+
+  @include flex(row, wrap, space-between, center );
+  
+  .h1{
+  }
+  .a{}
+  .button{
+      display: none;
+      cursor: pointer;
+      @include media(){
+          display: block;
+      }
+  }
+  .svg{
+      width: 2em;
+      height: 2em;
+      fill:white;
+  }
+  .nav{
+      @include media(){
+          width: 100%;
+          // display:none;
+          opacity: 0;
+          height: 0vh;
+          transition: all .5s ease;
+          @include flex(column, nowrap, center, center);
+
+          &.activo{
+              opacity: 1;
+              height: 50vh;
+              // display: flex;
+          }
+      }
+  }
+  .ul{
+      @include flex(row, wrap, flex-end, center);
+      @include media(){flex-direction: column;}
+  }
+  .li{
+      margin: 0.5em;
+      @include media(){margin: 1em 0;}
+      list-style:none;
+  }
+}
