@@ -1,0 +1,14 @@
+.btnCar{
+    width: 150px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: green;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid green;
+    background-color: var(--white);
+    color: green;
+}

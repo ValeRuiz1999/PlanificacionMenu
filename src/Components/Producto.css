@@ -1,0 +1,55 @@
+.producto{
+    background-color: var(--card-background);
+    width: 220px;
+    padding: 20px 16px;
+    border-radius: 12px;
+}
+.product__img{
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+}
+.product__name{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 14px;
+    color: var(--negro);
+}
+.product__ingredients{
+    display: flex;
+    justify-content: space-between;
+}
+.product__btn {
+    display: flex;
+    justify-content: center;
+}
+.btnVer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    max-width: 35%;
+    max-height: 80%;
+}
+.btnModal{
+    border: solid orangered;
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    width: 25%;
+}
+.btnModal:hover{
+    border: 1px solid orangered;
+    background-color: var(--white);
+    color: red;
+}
+.divBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+.H3Modal{
+    display: flex;
+    justify-content: center;
+}
